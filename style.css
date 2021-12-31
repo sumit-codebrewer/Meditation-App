@@ -29,9 +29,9 @@
 .player-container svg{
   position: absolute;
   height: 50%;
-  top: 36%;
-  left: 48%;
-  transform: translate(-50%,-50%);
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%,-50%) rotate(-90deg);
   pointer-events: none;
 }
 
@@ -65,11 +65,25 @@ video{
 
 .time-select button:hover{
   color:black;
-  background: white;
+  background: #A3E4DB;
 }
 
 .sound-picker button{
   border:none;
   height: 120px;
   width: 120px;
+  border-radius: 50%;
+  padding: 30px;
+}
+
+.sound-picker button:nth-child(1){
+  background: #4972a1;
+}
+
+.sound-picker button:nth-child(2){
+  background: #FFC900;
+}
+
+.sound-picker button img{
+  height: 100%;
 }
